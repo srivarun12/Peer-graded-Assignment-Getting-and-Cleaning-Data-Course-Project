@@ -39,9 +39,6 @@ mrg_train <- cbind(y_train, subject_train, x_train)
 mrg_test <- cbind(y_test, subject_test, x_test)
 setAllInOne <- rbind(mrg_train, mrg_test)
 
-#dim(setAllInOne)
-#[1] 10299   563
-
 
 #Step 2.-Extracts only the measurements on the mean and standard deviation for each measurement.
 
@@ -69,12 +66,6 @@ setForMeanAndStd <- setAllInOne[ , mean_and_std == TRUE]
 setWithActivityNames <- merge(setForMeanAndStd, activityLabels,
                               by='activityId',
                               all.x=TRUE)
-
-
-# Step 4. Appropriately labels the data set with descriptive variable names.
-
-
-# Done in previous steps, see 1.3,2.2 and 2.3!
 
 
 # Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
