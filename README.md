@@ -6,7 +6,7 @@ The R script, `run_analysis.R`, does the following:
   
 1. Merging the training and the test sets to create one data set.   
   Reading files    
-     Reading trainings tables   
+     Reading trainings tables
      Reading testing tables   
      Reading feature vector   
      Reading activity labels   
